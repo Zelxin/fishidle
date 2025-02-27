@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn6kg55el0prw"]
+
+[ext_resource type="Texture2D" uid="uid://c2wviq372q8pb" path="res://icon.svg" id="1_es32f"]
+[ext_resource type="Script" path="res://fish_card.gd" id="1_u2vw2"]
+
+[node name="FishCard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u2vw2")
+
+[node name="FishImage" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+texture = ExtResource("1_es32f")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 4.0
+offset_right = 453.0
+offset_bottom = 124.0
+
+[node name="FishName" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="FishInfo" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="FishValue" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="FishSize" type="Label" parent="VBoxContainer"]
+layout_mode = 2
